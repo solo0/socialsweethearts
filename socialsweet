@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<title>Social sweet</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<div class="header d-flex align-items-center">
+  <div class="container ">
+    <h2>How many camels for your boyfriend?</h2>
+  </div>
+</div>
+
+<div class="container">
+  <form>
+    <br>
+    <div class="row align-items-center">
+      <div class="col-3">
+        <h4>Age</h4>
+      </div>
+      <div class="col-1">
+        <span id="demo2"></span>
+      </div>
+      <div class="col-8">
+        <input type="range" name="age" min="1" max="70" value="25" class="slider" id="myRange2" />
+      </div>
+    </div>
+    <hr/>
+
+
+    <div class="row align-items-center">
+      <div class="col-3">
+        <h4>Height</h4>
+      </div>
+      <div class="col-1">
+        <span id="demo"></span>
+      </div>
+
+      <div class="col-8">
+        <input type="range" min="1" max="220" value="150" class="slider" id="myRange" />
+      </div>
+    </div>
+    <hr>
+
+    <!-- Haircolor -->
+    <div class="row align-items-center">
+      <div class="col-3">
+        <h4>Haircolor</h4>
+      </div>
+      <div class="col-9">
+        <div class="dropdown">
+          <select class="form-control" id="exampleFormControlSelect1"><option value="blonde">Blonde</option><option value="blonde">Black</option>
+          <option value="blonde">Ginger</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Hairlength -->
+    <div class="row align-items-center">
+      <div class="col-3">
+        <h4>Hairlength</h4>
+      </div>
+      <div class="col-9">
+       <div class="btn-group btn-group-flex" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Long
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Middle
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Short
+      </label>
+          <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Bold
+      </label>
+      </div>
+      </div>
+    </div>
+
+    <hr>
+<!--       Eye-color -->
+    <div class="row align-items-center">
+      <div class="col-3">
+        <h4>Eye-color</h4>
+      </div>
+      <div class="col-9 d-flex ">
+      <label class="container">
+  <input type="radio" checked="checked" name="radio"> Blue
+  <span class="checkmark"></span>
+</label>
+      <label class="container">
+  <input type="radio" name="radio"> Green
+  <span class="checkmark"></span>
+</label>
+      <label class="container">
+  <input type="radio" name="radio"> Brown
+  <span class="checkmark"></span>
+</label>
+      <label class="container">
+  <input type="radio" name="radio"> Grey
+  <span class="checkmark"></span>
+</label>
+    </div>
+    </div>
+
+
+    <hr>
+
+    <div class="row align-items-center">
+      <div class="col-3">
+        <h4>Beard</h4>
+      </div>
+      <div class="col-9 d-flex ">
+         <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> <img src="http://kamelrechner.de/img/beard-none.png"/>
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> <img src="http://kamelrechner.de/img/beard-small.png"/>
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> <img src="http://kamelrechner.de/img/beard-middle.png"/>
+      </label>
+          <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> <img src="http://kamelrechner.de/img/beard-full.png"/>
+      </label>
+      </div>
+      </div>
+      </div>
+
+    <hr>
+    <div class="row align-items-center">
+      <div class="col-5">
+        <h4>Body</h4>
+      </div>
+      <div class="col-7 d-flex ">
+         <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> <img src="http://kamelrechner.de/img/body-1.png"/>
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> <img src="http://kamelrechner.de/img/body-2.png"/>
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> <img src="http://kamelrechner.de/img/body-3.png"/>
+
+      </div>
+      </div>
+      </div>
+
+    <hr>
+
+     <button type="button" class="btn btn-secondary btn-lg btn-block">Calculate</button
+
+
+</div>
+  </form>
+
+
+
+</div>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://scotch.io/wp-content/uploads/2014/07/61.jpg);
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(https://images.unsplash.com/photo-1469041797191-50ace28483c3?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
+.header h2 {
+  color: white;
+  text-shadow: 4px 4px 2px #969696;
+}
+
+.container {
+  font-family: 'Roboto';
+  width: 850px !important;
+  margin: 0px auto 0;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2 small {
+  font-weight: normal;
+  color: #888;
+  display: block;
+}
+
+#slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#radiobutton styling
+.container input {
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  display: none;
+}
+
+.container {
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex.flex-row {
+  flex-direction: row;
+}
+.d-flex.align-items-center {
+  align-items: center;
+}
+
+.btn-group.btn-group-flex {
+  display: flex;
+}
+.btn-group.btn-group-flex .btn {
+  flex-grow: 1;
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script>
+  var slider2 = document.getElementById("myRange2");
+var output2 = document.getElementById("demo2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
